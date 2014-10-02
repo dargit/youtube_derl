@@ -13,6 +13,9 @@ Use at your own risk, the author is not responsible for any damages that may res
 
 <b>USAGE:</b>
 
+c(youtube_derl_pl).<br>
+c(youtube_derl).
+
 youtube_derl:download([URL]).<br>
 youtube_derl:download([URL1,URL2,...,URLn]).<br>
 youtube_derl:download([URL,Skip,Verbose,Output_folder]).<br>
