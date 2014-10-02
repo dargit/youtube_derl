@@ -20,7 +20,7 @@ youtube_derl:download([URL,FORMAT_CODE,Skip,Verbose,Output_folder]).
 
 URL = string (eg. "https://www.youtube.com/watch?v=VIDEO_CODE")<br>
 URL = string (eg. "https://www.youtube.com/playlist?list=PLAYLIST_CODE")<br>
-URL = string (eg. "https://www.youtube.com/playlist?list=playlist_code&index=N_INTEGER")<br>
+URL = string (eg. "https://www.youtube.com/playlist?list=PLAYLIST_CODE&index=N_INTEGER")<br>
 Skip = integer()	0,1<br>
 Verbose = integer()	0,1<br>
 Output_folder -> string (eg. "out/")<br>
@@ -31,5 +31,5 @@ youtube_derl:get_videoid(URL) -> {videoId, VIDEO_ID, INDEX} | {playlistId, PLAYL
 <b>ONLY FOR SINGLE VIDEO NOT FOR PLAYLIST URL</b><br>
 youtube_derl:get_best_format(URL) -> {FORMAT_CODE,[{FORMAT_CODE,FORMAT_EXTENSION,FORMAT_DESCRIPTION}]}<br>
 
-youtube_derl:get_available_format(URL) -> [FORMAT_CODE]
+youtube_derl:get_available_formats(URL) -> [FORMAT_CODE]
 
